@@ -805,8 +805,8 @@ input:focus {
 
 
 .message_section {
-    height: 600px;
-    width: 300px;
+    height: 700px;
+    width: 500px;
     border: 60px solid transparent;
     border-radius: 12px;
     box-shadow: 1px 1px 1px 1px;
