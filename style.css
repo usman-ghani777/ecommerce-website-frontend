@@ -1288,9 +1288,7 @@ input:focus {
   border-color: #2563eb;
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
-/* ============================= */
-/* PRODUCT SECTION (FLEXBOX) */
-/* ============================= */
+
 .product-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -1306,7 +1304,7 @@ input:focus {
   border-radius: 18px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
 
@@ -1327,7 +1325,7 @@ input:focus {
 .product-info {
   padding: 1.2rem;
   text-align: center;
-    height: 200px;
+    height: 150px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
