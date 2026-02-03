@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="login_body">
-
 
     <header>
         <div class="navbar">
@@ -23,7 +21,7 @@
 
             <div class="home_etc">
                 <a href="index.html" class="nav_a_tags">Home</a>
-                <a href="" class="nav_a_tags">Shop</a>
+                <a href="#" class="nav_a_tags">Shop</a>
                 <a href="catagories.html" class="nav_a_tags">Catagories</a>
                 <a href="about.html" class="nav_a_tags">About</a>
                 <a href="contact.html" class="nav_a_tags">Contact</a>
@@ -32,16 +30,18 @@
             <div class="cart_logo">
                 <i class="fa-solid fa-cart-arrow-down"></i>
             </div>
-            <button class="login_button" type="button" onclick="window.location.href='login.html'">
+
+            <button class="login_button" type="button">
                 <i class="fa-solid fa-right-to-bracket"></i> Login
             </button>
-
         </div>
     </header>
 
+    <!-- LOGIN SECTION -->
     <div class="login-container">
         <h2>Login</h2>
-        <form>
+
+        <form id="loginForm">
             <div class="input-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
@@ -51,22 +51,20 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Enter your password" required>
             </div>
+
             <button type="submit" class="sign_in_button">Sign In</button>
         </form>
 
-        <!-- Google Button -->
-        <button class="Continue_with google">
+        <!-- Google Login -->
+        <button type="button" class="Continue_with google" id="googleLogin">
             <i class="fa-brands fa-google"></i> Continue with Google
         </button>
 
-        <!-- Facebook Button -->
-        <button class="Continue_with facebook">
+        <!-- Facebook Login -->
+        <button type="button" class="Continue_with facebook" id="facebookLogin">
             <i class="fa-brands fa-facebook-f"></i> Continue with Facebook
         </button>
-
     </div>
-
-
+<script src="script.js"></script>
 </body>
-
 </html>

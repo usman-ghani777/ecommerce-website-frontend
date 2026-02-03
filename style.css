@@ -1325,7 +1325,7 @@ input:focus {
 .product-info {
   padding: 1.2rem;
   text-align: center;
-    height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -1366,24 +1366,6 @@ input:focus {
 
 .add-cart:hover {
   background-color: #e65c00;
-}
-
-
-
-/* Tablet (2 cards) */
-@media (max-width: 1024px) {
-  .product-card {
-    flex: 1 1 calc(50% - 1.5rem);
-    max-width: calc(50% - 1.5rem);
-  }
-}
-
-/* Mobile (1 card) */
-@media (max-width: 600px) {
-  .product-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
 }
 
 
