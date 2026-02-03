@@ -2,171 +2,185 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerece Webpage</title>
+    <title>Categories - ShopHub</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"></div>
-            <div class="home_etc">
-                <a href="index.html" class="nav_a_tags">Home</a>
-                <a href="shop.html" class="nav_a_tags">Shop</a>
-                <a href="catagories.html" class="nav_a_tags">Catagories</a>
-                <a href="about.html" class="nav_a_tags">About</a>
-                <a href="contact.html" class="nav_a_tags">Contact</a>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="ShopHub Home"></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="catagories.html" class="nav-link active">Categories</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
-            <div class="cart_logo">
-                <i class="fa-solid fa-cart-arrow-down"></i>
+            <div class="nav-actions">
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <button class="btn btn-primary" type="button" onclick="window.location.href='login.html'">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </button>
             </div>
-            <button class="login_button" type="button" onclick="window.location.href='login.html'">
-                <i class="fa-solid fa-right-to-bracket"></i> Login
-            </button>
-        </div>
+        </nav>
     </header>
 
-    <div class="hero_section">
-        <div class="hero_section_content">
-            <i class="fa-solid fa-box"></i>
-            <h1>Shop by Category</h1>
-            <p>Browse our wide selection of products organized by category</p>
-        </div>
-    </div>
-    <div class="Catagories_section">
-        <div class="cards">
-            <div class="c_box_image" style="background-image: url(images/catagoires_page_box1.png);"></div>
-            <div class="c_box_content">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <h2>Electronics</h2>
-                <p>Explore the latest gadegts and laptops,smartphones and tech accessories</p>
-                <button>Button</button>
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <i class="fa-solid fa-box"></i>
+                <h1 class="page-hero-title">Shop by Category</h1>
+                <p class="page-hero-text">Browse our wide selection of products organized by category</p>
             </div>
-        </div>
-        <div class="cards">
-            <div class="c_box_image" style="background-image: url(images/catagoires_page_box2.png);"></div>
-            <div class="c_box_content">
-                <i class="fa-solid fa-tshirt"></i>
-                <h2>Fashion</h2>
-                <p>Discover trendy clothes,shoes and accessories and designer collection</p>
-                <button>Button</button>
+        </section>
+
+        <!-- Main Categories List -->
+        <section class="Catagories_section">
+            <article class="cards">
+                <div class="c_box_image" style="background-image: url('assets/images/catagoires_page_box1.png');"></div>
+                <div class="c_box_content">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>Electronics</h2>
+                    <p>Explore the latest gadgets, laptops, smartphones and tech accessories.</p>
+                    <button class="btn btn-primary">View Products</button>
+                </div>
+            </article>
+            <article class="cards">
+                <div class="c_box_image" style="background-image: url('assets/images/catagoires_page_box2.png');"></div>
+                <div class="c_box_content">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h2>Fashion</h2>
+                    <p>Discover trendy clothes, shoes, accessories and designer collections.</p>
+                    <button class="btn btn-primary">View Products</button>
+                </div>
+            </article>
+            <article class="cards">
+                <div class="c_box_image" style="background-image: url('assets/images/catagoires_page_box3.png');"></div>
+                <div class="c_box_content">
+                    <i class="fa-solid fa-couch"></i>
+                    <h2>Home & Living</h2>
+                    <p>Discover elegant furniture, décor, and essentials to elevate your home.</p>
+                    <button class="btn btn-primary">View Products</button>
+                </div>
+            </article>
+            <article class="cards">
+                <div class="c_box_image" style="background-image: url('assets/images/catagoires_page_box4.png');"></div>
+                <div class="c_box_content">
+                    <i class="fa-solid fa-volleyball"></i>
+                    <h2>Sports</h2>
+                    <p>Find equipment and gear for all your activities.</p>
+                    <button class="btn btn-primary">View Products</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Featured Collections -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collections</h2>
+                <p class="section-subtitle">Curated selections for every lifestyle</p>
             </div>
-        </div>
-        <div class="cards">
-            <div class="c_box_image" style="background-image: url(images/catagoires_page_box3.png);"></div>
-            <div class="c_box_content">
-                <i class="fa-solid fa-couch"></i>
-                <h2>Home & Living</h2>
-                <p>Discover elegant furniture, décor, and essentials to elevate your home</p>
-                <button>Button</button>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="c_box_image" style="background-image: url(images/catagoires_page_box4.png);"></div>
-            <div class="c_box_content">
-                <i class="fa-solid fa-volleyball"></i>
-                <h2>Sports</h2>
-                <p>Find equipments and gear for you all activiteis</p>
-                <button>Button</button>
-            </div>
-        </div>
-    </div>
-    <!-- 
-    another Featured section -->
-    <!-- Featured Collections Section -->
-    <!-- Featured Collections -->
-    <div class="featured-collections">
-        <div class="container">
-            <h2>Featured Collections</h2>
-            <p class="subtitle">Curated selections for every lifestyle</p>
-            <div class="f_cards">
+            <div class="grid-container">
                 <!-- Card 1 -->
-                <div class="card">
-                    <img src="images/f_card1.png" alt="New Arrivals">
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/f_card1.png" alt="New Arrivals" class="card-img">
+                    </div>
                     <div class="card-content">
                         <h3>New Arrivals</h3>
                         <p>Check out the latest products</p>
-                        <button>Shop Now</button>
+                        <button class="btn btn-primary">Shop Now</button>
                     </div>
-                </div>
+                </article>
                 <!-- Card 2 -->
-                <div class="card">
-                    <img src="images/f_card1.png" alt="Best Sellers">
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/f_card1.png" alt="Best Sellers" class="card-img">
+                    </div>
                     <div class="card-content">
                         <h3>Best Sellers</h3>
                         <p>Our most popular items</p>
-                        <button>Shop Now</button>
+                        <button class="btn btn-primary">Shop Now</button>
                     </div>
-                </div>
+                </article>
                 <!-- Card 3 -->
-                <div class="card">
-                    <img src="images/f_card1.png" alt="Sale Items">
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/f_card1.png" alt="Sale Items" class="card-img">
+                    </div>
                     <div class="card-content">
                         <h3>Sale Items</h3>
-                        <p>Great deals on quality pro</p>
-                        <button>Shop Now</button>
+                        <p>Great deals on quality products</p>
+                        <button class="btn btn-primary">Shop Now</button>
                     </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Promo / Not Found -->
+        <section class="promo-banner">
+            <div class="promo-content">
+                <h2 class="promo-title">Can't Find What You're Looking For?</h2>
+                <p class="promo-text">Browse our complete product catalog</p>
+            </div>
+            <button class="btn btn-primary btn-large" onclick="window.location.href='shop.html'">Shop Sale Now</button>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col brand-col">
+                <p class="footer-logo">ShopHub</p>
+                <p class="footer-desc">
+                    Your one-stop destination for quality products at amazing prices.
+                    Shop with confidence!
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="catagories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="view_product_section">
-        <div class="product_content">
-            <h1>Can't Find What You're Looking For?</h1>
-            <pre><p>Browse our complete product catalog</p></pre>
-        </div>
-        <button class="product_button">Shop Sale Now</button>
-    </div>
-    <footer>
-        <div class="panal1">
-            <div class="grid1">
-                <p>ShopHub</p>
-                <pre>
-Your one-stop destination for
-quality products at amazing prices.
-Shop withconfidence!
-            </pre>
-            </div>
-            <div class="grid2">
-                <p>Quick Links</p>
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Categories</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="grid3">
-                <p>Customer Support</p>
-                <a href="#">FAQ</a>
-                <a href="#">Shipping Info</a>
-                <a href="#">Returns</a>
-                <a href="#">Track Order</a>
-                <a href="#">Help Center</a>
-            </div>
-            <div class="grid4">
-                <p>Follow Us</p>
-                <div class="icons">
-                    <div class="facebook_icon">
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="insta_icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="in_icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panal2">
-            <div class="panal2_conten">
-                <p>© 2026 ShopHub. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopHub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                    Service</a></p>
         </div>
     </footer>
 </body>
+
+</html>

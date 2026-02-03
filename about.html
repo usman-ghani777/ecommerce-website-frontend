@@ -2,199 +2,189 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us - ShopHub</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"></div>
-
-            <div class="home_etc">
-                <a href="index.html" class="nav_a_tags">Home</a>
-                <a href="shop.html" class="nav_a_tags">Shop</a>
-                <a href="catagories.html" class="nav_a_tags">Catagories</a>
-                <a href="about.html" class="nav_a_tags">About</a>
-                <a href="contact.html" class="nav_a_tags">Contact</a>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo" aria-label="ShopHub Home"></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="catagories.html" class="nav-link">Categories</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
-
-            <div class="cart_logo">
-                <i class="fa-solid fa-cart-arrow-down"></i>
+            <div class="nav-actions">
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <button class="btn btn-primary" type="button" onclick="window.location.href='login.html'">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </button>
             </div>
-
-            <button class="login_button" type="button" onclick="window.location.href='login.html'">
-                <i class="fa-solid fa-right-to-bracket"></i> Login
-            </button>
-        </div>
+        </nav>
     </header>
 
-    <div class="hero_section_1st_page" style="background-image: url(images/about_us_hero_image.png);">
-        <div class="hero_section_1st_content">
-            <h1 class="page1_h1">About ShopHub</h1>
-            <pre class="page1_p"><p>Your trusted partner in online shopping since 2020!</p></pre>
-        </div>
-    </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero"
+            style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/about_us_hero_image.png'); background-size: cover; background-position: center;">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">About ShopHub</h1>
+                <p class="page-hero-text">Your trusted partner in online shopping since 2020!</p>
+            </div>
+        </section>
 
-    <div class="About_content1">
-        <h1 class="About_content1_h1">Our Story</h1>
-        <pre>
-<p class="About_content1_p">
-ShopHub was founded with a simple mission: to make quality products accessible to everyone. 
-What started as a small online store has grown into a trusted marketplace serving thousands of customers worldwide.
+        <!-- Our Story -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+            </div>
+            <div
+                style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8; color: var(--text-light);">
+                <p>
+                    ShopHub was founded with a simple mission: to make quality products accessible to everyone.
+                    What started as a small online store has grown into a trusted marketplace serving thousands of
+                    customers worldwide.
+                </p>
+                <br>
+                <p>
+                    We believe that shopping should be easy, enjoyable, and trustworthy. That's why we carefully curate
+                    our
+                    product selection, partner with reliable suppliers, and provide exceptional customer service every
+                    step of the way.
+                </p>
+            </div>
+        </section>
 
-We believe that shopping should be easy, enjoyable, and trustworthy. That's why we carefully curate our 
-product selection, partner with reliable suppliers, and provide exceptional customer service every step of the way.
-</p>
-    </pre>
-    </div>
-
-    <div class="About_section1">
-        <div class="About_box">
-            <i class="fa-regular fa-star"></i>
-            <div class="About_box_content">
-                <div class="About_box_text">
+        <!-- Values Section -->
+        <section class="section" style="background-color: #f8f9fa;">
+            <div class="grid-container">
+                <div class="card testimonial-card">
+                    <i class="fa-regular fa-star"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
                     <h3>Quality First</h3>
                     <p>We never compromise on product quality. Every item is carefully selected and vetted.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="About_box">
-            <i class="fa-regular fa-user"></i>
-            <div class="About_box_content">
-                <div class="About_box_text">
+                <div class="card testimonial-card">
+                    <i class="fa-regular fa-user"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
                     <h3>Customer First</h3>
                     <p>Your satisfaction is our priority. We're here to help you every step of the way.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="About_box">
-            <i class="fa-solid fa-shield-halved"></i>
-            <div class="About_box_content">
-                <div class="About_box_text">
+                <div class="card testimonial-card">
+                    <i class="fa-solid fa-shield-halved"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
                     <h3>Trust & Integrity</h3>
                     <p>We build lasting relationships through honest communication and reliable service.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="About_box">
-            <i class="fa-solid fa-box"></i>
-            <div class="About_box_content">
-                <div class="About_box_text">
+                <div class="card testimonial-card">
+                    <i class="fa-solid fa-box"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
                     <h3>Wide Selection</h3>
                     <p>From electronics to fashion, we offer a diverse range of products for every need.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="About_box">
-            <i class="fa-regular fa-handshake"></i>
-            <div class="About_box_content">
-                <div class="About_box_text">
+                <div class="card testimonial-card">
+                    <i class="fa-regular fa-handshake"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
                     <h3>Community</h3>
                     <p>We're more than a store - we're a community of passionate shoppers and sellers.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="About_box">
-            <i class="fa-regular fa-lightbulb"></i>
-            <div class="About_box_content">
-                <div class="About_box_text">
+                <div class="card testimonial-card">
+                    <i class="fa-regular fa-lightbulb"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
                     <h3>Innovation</h3>
                     <p>We continuously improve our platform to provide the best shopping experience.</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="Rating_sales">
-        <div class="rating">
-            <h1>50K+</h1>
-            <p>Happy customer</p>
-        </div>
-        <div class="rating">
-            <h1>10k+</h1>
-            <p>New products</p>
-        </div>
-        <div class="rating">
-            <h1>100+</h1>
-            <p>New Brands</p>
-        </div>
-        <div class="rating">
-            <h1>4.8</h1>
-            <p>Average Rating</p>
-        </div>
-    </div>
-
-    <div class="Browse_products">
-        <div class="Browse_content">
-            <h1 class="page1_h1">Ready to Start Shoping?</h1>
-            <pre><p>Join thousands of satisfied customers today!</p></pre>
-        </div>
-        <button class="Browse_products_button">Browse Products</button>
-    </div>
-
-    <footer>
-        <div class="panal1">
-            <div class="grid1">
-                <p>ShopHub</p>
-                <pre>
-Your one-stop destination for
-quality products at amazing prices.
-Shop with confidence!
-            </pre>
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2>50K+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h2>10k+</h2>
+                    <p>New Products</p>
+                </div>
+                <div class="stat-item">
+                    <h2>100+</h2>
+                    <p>New Brands</p>
+                </div>
+                <div class="stat-item">
+                    <h2>4.8</h2>
+                    <p>Average Rating</p>
+                </div>
             </div>
+        </section>
 
-            <div class="grid2">
-                <p>Quick Links</p>
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Categories</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
+        <!-- CTA Section -->
+        <section class="promo-banner">
+            <div class="promo-content">
+                <h2 class="promo-title">Ready to Start Shopping?</h2>
+                <p class="promo-text">Join thousands of satisfied customers today!</p>
             </div>
+            <button class="btn btn-primary btn-large" onclick="window.location.href='shop.html'">Browse
+                Products</button>
+        </section>
 
-            <div class="grid3">
-                <p>Customer Support</p>
-                <a href="#">FAQ</a>
-                <a href="#">Shipping Info</a>
-                <a href="#">Returns</a>
-                <a href="#">Track Order</a>
-                <a href="#">Help Center</a>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col brand-col">
+                <p class="footer-logo">ShopHub</p>
+                <p class="footer-desc">
+                    Your one-stop destination for quality products at amazing prices.
+                    Shop with confidence!
+                </p>
             </div>
-
-            <div class="grid4">
-                <p>Follow Us</p>
-                <div class="icons">
-                    <div class="facebook_icon">
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="insta_icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="in_icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="catagories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-
-        <div class="panal2">
-            <div class="panal2_content">
-                <p>© 2026 ShopHub. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopHub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                    Service</a></p>
         </div>
     </footer>
-
 </body>
 
 </html>
