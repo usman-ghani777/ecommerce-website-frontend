@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97483dec-a619-4de1-b69e-7fcea4dceaa0/deploy-status)](https://app.netlify.com/projects/shophub-page/deploys)
+
 # E-commerce Project
 
 A modern, responsive E-commerce website template built with HTML5 and CSS3. This project demonstrates a clean user interface for an online store, featuring various page layouts and a consistent design system.
