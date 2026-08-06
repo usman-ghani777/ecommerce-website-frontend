@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopHub - E-commerce</title>
@@ -24,9 +27,10 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
             <div class="nav-actions">
-                <div class="cart-icon">
-                    <i class="fa-solid fa-cart-arrow-down"></i>
-                </div>
+                <a href="cart.html" class="cart-icon">
+     <i class="fa-solid fa-cart-arrow-down"></i>
+    <span class="cart-count">0</span>
+</a>
                 <button class="btn btn-primary" type="button" onclick="window.location.href='login.html'">
                     <i class="fa-solid fa-right-to-bracket"></i> Login
                 </button>
@@ -114,61 +118,112 @@
                 <p class="section-subtitle">Check out our best-selling items</p>
             </div>
             <div class="grid-container product-grid">
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="assets/images/watch.png" alt="Smart Watch" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Smart Watch</h3>
-                        <p class="price">$79.99</p>
-                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="assets/images/headphones.png" alt="Wireless Headphones" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Wireless Headphones</h3>
-                        <p class="price">$79.99</p>
-                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="assets/images/sunglasses.png" alt="Designer Sunglasses" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Designer Sunglasses</h3>
-                        <p class="price">$129.99</p>
-                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="assets/images/camera.png" alt="Digital Camera" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Digital Camera</h3>
-                        <p class="price">$549.99</p>
-                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="assets/images/laptop_pic.png" alt="Premium Laptop" class="card-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Premium Laptop</h3>
-                        <p class="price">$999.99</p>
-                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="assets/images/headphones.png" alt="Bluetooth Speaker" class="card-img">
-                    </div>
-                    <div class="card-content">
+               <article
+    class="product-card"
+    data-id="1"
+    data-name="Smart Watch"
+    data-price="79.99"
+    data-image="assets/images/watch.png">
+    <div class="card-image-wrapper">
+        <img src="assets/images/watch.png" alt="Smart Watch" class="card-img">
+    </div>
+
+    <div class="card-content">
+        <h3>Smart Watch</h3>
+        <p class="price">$79.99</p>
+        <button class="btn btn-primary add-to-cart">
+            Add to Cart
+        </button>
+    </div>
+</article>
+
+               <article
+    class="product-card"
+    data-id="2"
+    data-name="Wireless Headphones"
+    data-price="79.99"
+    data-image="assets/images/headphones.png"
+>
+    <div class="card-image-wrapper">
+        <img src="assets/images/headphones.png" alt="Wireless Headphones" class="card-img">
+    </div>
+
+    <div class="card-content">
+        <h3>Wireless Headphones</h3>
+        <p class="price">$79.99</p>
+        <button class="btn btn-primary add-to-cart">
+            Add to Cart
+        </button>
+    </div>
+</article>
+               <article
+    class="product-card"
+    data-id="3"
+    data-name="Designer Sunglasses"
+    data-price="129.99"
+    data-image="assets/images/sunglasses.png"
+>
+    <div class="card-image-wrapper">
+        <img src="assets/images/sunglasses.png" alt="Designer Sunglasses" class="card-img">
+    </div>
+
+    <div class="card-content">
+        <h3>Designer Sunglasses</h3>
+        <p class="price">$129.99</p>
+        <button class="btn btn-primary add-to-cart">
+            Add to Cart
+        </button>
+    </div>
+</article>
+               <article
+    class="product-card"
+    data-id="4"
+    data-name="Digital Camera"
+    data-price="549.99"
+    data-image="assets/images/camera.png"
+>
+    <div class="card-image-wrapper">
+        <img src="assets/images/camera.png" alt="Digital Camera" class="card-img">
+    </div>
+
+    <div class="card-content">
+        <h3>Digital Camera</h3>
+        <p class="price">$549.99</p>
+        <button class="btn btn-primary add-to-cart">
+            Add to Cart
+        </button>
+    </div>
+</article>
+                <article
+    class="product-card"
+    data-id="5"
+    data-name="Premium Laptop"
+    data-price="999.99"
+    data-image="assets/images/laptop_pic.png"
+>
+    <div class="card-image-wrapper">
+        <img src="assets/images/laptop_pic.png" alt="Premium Laptop" class="card-img">
+    </div>
+
+    <div class="card-content">
+        <h3>Premium Laptop</h3>
+        <p class="price">$999.99</p>
+        <button class="btn btn-primary add-to-cart">
+            Add to Cart
+        </button>
+    </div>
+</article>
+                <article
+    class="product-card"
+    data-id="6"
+    data-name="Bluetooth Speaker"
+    data-price="49.99"
+    data-image="assets/images/headphones.png"
+>
+    <div class="card-image-wrapper">
+        <img src="assets/images/headphones.png" alt="Bluetooth Speaker" class="card-img">
+    </div>
+    <div class="card-content">
                         <h3>Bluetooth Speaker</h3>
                         <p class="price">$49.99</p>
                         <button class="btn btn-primary add-to-cart">Add to Cart</button>
@@ -285,6 +340,7 @@
                     Service</a></p>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

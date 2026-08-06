@@ -34,6 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // If a filter is provided via URL (e.g., shop.html?filter=electronics), apply it
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialFilter = urlParams.get('filter');
+        if (initialFilter && filterButtons.length > 0) {
+            const targetBtn = document.querySelector(`.filter-btn[data-filter="${initialFilter}"]`);
+            if (targetBtn) targetBtn.click();
+        }
+    } catch (e) {
+        // ignore malformed URLSearchParams in older browsers
+    }
+
     /* =========================================
        2. LOGIN FORM HANDLING
        ========================================= */
@@ -83,6 +95,63 @@ document.addEventListener("DOMContentLoaded", () => {
     // One extra brace was in snippet? No.
     // Syntax looks correct.
 });
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+const cartCountElement = document.querySelector(".cart-count");
+
+function updateCartCount() {
+    const totalItems = cart.reduce((total, item) => {
+        return total + item.quantity;
+    }, 0);
+
+    if (cartCountElement) {
+        cartCountElement.textContent = totalItems;
+    }
+}
+
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+//  Call this when the page loads
+updateCartCount();
+
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+addToCartButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        const productCard = button.closest(".product-card");
+
+        const id = productCard.dataset.id;
+        const name = productCard.dataset.name;
+        const price = productCard.dataset.price;
+        const image = productCard.dataset.image;
+
+        const product = {
+            id,
+            name,
+            price: Number(price),
+            image,
+            quantity: 1
+        };
+
+        const existingProduct = cart.find(item => item.id === product.id);
+
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            cart.push(product);
+        }
+
+        updateCartCount();
+        saveCart();
+
+        console.log(cart);
+    });
+});
+
+
+
 
 
 

@@ -196,6 +196,11 @@ button {
     transition: transform 0.2s;
 }
 
+.cart-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .cart-icon:hover {
     transform: scale(1.1);
     color: var(--secondary-color);

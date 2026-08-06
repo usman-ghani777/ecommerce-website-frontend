@@ -24,9 +24,10 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </div>
       <div class="nav-actions">
-        <div class="cart-icon">
+        <a href="cart.html" class="cart-icon">
           <i class="fa-solid fa-cart-arrow-down"></i>
-        </div>
+          <span class="cart-count">0</span>
+        </a>
         <button class="btn btn-primary" type="button" onclick="window.location.href='login.html'">
           <i class="fa-solid fa-right-to-bracket"></i> Login
         </button>
@@ -56,7 +57,7 @@
     <!-- Product Section -->
     <div class="grid-container product-grid">
       <!-- ELECTRONICS -->
-      <article class="product-card" data-category="electronics">
+      <article class="product-card" data-category="electronics" data-id="101" data-name="Wireless Headphones" data-price="79.99" data-image="assets/images/headphones.png">
         <div class="card-image-wrapper">
           <img src="assets/images/headphones.png" alt="Wireless Headphones" class="card-img">
         </div>
@@ -68,7 +69,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="electronics">
+      <article class="product-card" data-category="electronics" data-id="102" data-name="Premium Laptop" data-price="999.99" data-image="assets/images/laptop_pic.png">
         <div class="card-image-wrapper">
           <img src="assets/images/laptop_pic.png" alt="Premium Laptop" class="card-img">
         </div>
@@ -80,7 +81,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="electronics">
+      <article class="product-card" data-category="electronics" data-id="103" data-name="Smart Watch" data-price="89.99" data-image="assets/images/smart-watch.png">
         <div class="card-image-wrapper">
           <img src="assets/images/smart-watch.png" alt="Smart Watch" class="card-img">
         </div>
@@ -92,7 +93,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="electronics">
+      <article class="product-card" data-category="electronics" data-id="104" data-name="Digital Camera" data-price="599.99" data-image="assets/images/digital-camera.png">
         <div class="card-image-wrapper">
           <img src="assets/images/digital-camera.png" alt="Digital Camera" class="card-img">
         </div>
@@ -104,7 +105,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="electronics">
+      <article class="product-card" data-category="electronics" data-id="105" data-name="Bluetooth Speaker" data-price="79.99" data-image="assets/images/bluthoot.png">
         <div class="card-image-wrapper">
           <img src="assets/images/bluthoot.png" alt="Bluetooth Speaker" class="card-img">
         </div>
@@ -116,7 +117,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="electronics">
+      <article class="product-card" data-category="electronics" data-id="106" data-name="Gaming Mouse" data-price="9.99" data-image="assets/images/gaming-mouse.png">
         <div class="card-image-wrapper">
           <img src="assets/images/gaming-mouse.png" alt="Gaming Mouse" class="card-img">
         </div>
@@ -129,7 +130,7 @@
       </article>
 
       <!-- FASHION -->
-      <article class="product-card" data-category="fashion">
+      <article class="product-card" data-category="fashion" data-id="201" data-name="Travel Pack" data-price="19.99" data-image="assets/images/travel-pack.png">
         <div class="card-image-wrapper">
           <img src="assets/images/travel-pack.png" alt="Travel Pack" class="card-img">
         </div>
@@ -141,7 +142,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="fashion">
+      <article class="product-card" data-category="fashion" data-id="202" data-name="Sun Glasses" data-price="11.99" data-image="assets/images/sunglasses.png">
         <div class="card-image-wrapper">
           <img src="assets/images/sunglasses.png" alt="Sun Glasses" class="card-img">
         </div>
@@ -153,7 +154,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="fashion">
+      <article class="product-card" data-category="fashion" data-id="203" data-name="Winter Jacket" data-price="60.99" data-image="assets/images/winter jacket.png">
         <div class="card-image-wrapper">
           <img src="assets/images/winter jacket.png" alt="Winter Jacket" class="card-img">
         </div>
@@ -165,7 +166,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="fashion">
+      <article class="product-card" data-category="fashion" data-id="204" data-name="Shoes" data-price="49.99" data-image="assets/images/shoes.png">
         <div class="card-image-wrapper">
           <img src="assets/images/shoes.png" alt="Shoes" class="card-img">
         </div>
@@ -178,7 +179,7 @@
       </article>
 
       <!-- SPORTS -->
-      <article class="product-card" data-category="sports">
+      <article class="product-card" data-category="sports" data-id="301" data-name="Running Shoes" data-price="99.99" data-image="assets/images/running shoes.png">
         <div class="card-image-wrapper">
           <img src="assets/images/running shoes.png" alt="Running Shoes" class="card-img">
         </div>
@@ -190,7 +191,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="sports">
+      <article class="product-card" data-category="sports" data-id="302" data-name="Yoga Mat" data-price="79.99" data-image="assets/images/yoga mart.png">
         <div class="card-image-wrapper">
           <img src="assets/images/yoga mart.png" alt="Yoga Mat" class="card-img">
         </div>
@@ -202,7 +203,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="sports">
+      <article class="product-card" data-category="sports" data-id="303" data-name="Tennis Racket" data-price="16.99" data-image="assets/images/tennis racket.png">
         <div class="card-image-wrapper">
           <img src="assets/images/tennis racket.png" alt="Tennis Racket" class="card-img">
         </div>
@@ -215,7 +216,7 @@
       </article>
 
       <!-- HOME & LIVING -->
-      <article class="product-card" data-category="home-living">
+      <article class="product-card" data-category="home-living" data-id="401" data-name="Coffee" data-price="79.99" data-image="assets/images/coffeee.png">
         <div class="card-image-wrapper">
           <img src="assets/images/coffeee.png" alt="Coffee" class="card-img">
         </div>
@@ -227,7 +228,7 @@
         </div>
       </article>
 
-      <article class="product-card" data-category="home-living">
+      <article class="product-card" data-category="home-living" data-id="402" data-name="Lamp" data-price="79.99" data-image="assets/images/lamp.png">
         <div class="card-image-wrapper">
           <img src="assets/images/lamp.png" alt="Lamp" class="card-img">
         </div>
